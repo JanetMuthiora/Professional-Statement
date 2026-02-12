@@ -1,0 +1,70 @@
+001: Fundamental Knowledge
+002: Malware is a software program that is created to infiltrate a computer system or network without the user's knowledge or consent, with the intent of causing harm or damage. The diverse types of malwares can perform a range of actions based on the attacker's objectives. According to the knowledge you have learned in the lecture, list five primary actions that malware can perform and at least two types of malwares.
+003: No
+004: Action that malware performs
+005: Malware examples (at least two examples)
+006: 1
+007: Stealing sensitive information
+008: Spyware, keyloggers
+009: 2
+010: Disrupting business operations
+011: Ransomware, virus
+012: 3
+013: Gaining unauthorised access
+014: Rootkits, Remote Administration Tools
+015: 4
+016: Demanding ransoms
+017: Ransomware, Scareware
+018: 5
+019: Stealing compute resources
+020: Cryptojacking, Worms
+021: Trouble shooting ability
+022: A hash function is a one-way function used to transform data of arbitrary size into data of a fixed size. The output of a hash function is known as a hash value, hash code, digest, or fingerprint, which represents a unique signature of the original data. This signature can be used to verify data integrity and detect tampering.
+023: For this question, you need to download the Python zipped file "Python-3.11.3.tgz" from Moodle and calculate its hash values using MD5, SHA1, and SHA256 algorithms. Then, compare the hashes with the given signature of "016ba65bc80411f9ec20c614ab385e81" to identify which hash algorithm was used for this signature.
+024: Please find suitable scripts or tools for your computer to calculate the hash values. Windows users can use the "certutil" command in CMD or PowerShell.
+025: Screenshots to show how you obtain the hashes using MD5, SHA1 and SHA256 respectively and write down the hash values clearly in text format.
+026: MD5 hash - 016ba65bc80411f9ec20c614ab385e81
+027: SHA1 hash - 02e664f5cd4dc9417d4b4af80c13ab7a93f81ebb
+028: SHA26 hash - 1a79f3df32265d9e6625f1a0b31c28eb1594df911403d11f3320ee1da1b3e048
+029: Algorithm used to generate the signature and explain its pros and cons.
+030: MD5 hash - 016ba65bc80411f9ec20c614ab385e81 was the algorithm that was used. This algorithm converts messages of any length and returns an output of fixed length of 32 characters.
+031: Pros Of MD5 (The SSL Store, 2025)
+032: Cons of MD5 (The SSL Store, 2025)
+033: Provides an easy way to store and compare hashes.
+034: Much less secure
+035: Useful when comparing files or codes for any alteration
+036: Vulnerable to collision
+037: Easy to obtain similar hash function from distinct outputs
+038: Deprecation over the years and therefore not considered secure
+039: Cybersecurity Threat Assessment
+040: A CQU staff received the following email, which looks suspicious. Therefore, he reported it to CQU TASAC. Assuming you are a TASAC support specialist, please use your expertise to identify the type of cybersecurity threat it represents and provide your recommendations.
+041: Type of cybersecurity threat
+042: Phishing is an attack where the attacker uses a chosen medium to utilise social engineering tricks to convince the victim into taking a specific action such as obtaining sensitive information (Alkhalil et al. 2021).
+043: Based on the email above, the threat is a phishing attempt, this is an effective method that involves social engineering techniques. The phisher in this case kim@contractshire.com is trying to lure the staff member to click on the links. Outlook has flagged it as “from outside your organization” and the use of generic greeting indicates it is bulk message.
+044: Recommendations
+045: Not to click on any of the hyperlinks in the email, this malicious links could redirect to a fraudulent website.
+046: Not to respond or provide any sensitive information such as Personally Identifiable  Information (PII) since the goal of a phishing attack is to disclose such data.
+047: Delete the email to prevent any accidental interactions with the said email
+048: Problem solving skills
+049: Alice is a CQUniversity student majoring in ICT. While studying the TLS key exchange process, she reviews a diagram that includes three key components:
+050: the server's digital certificate,
+051: the pre-master secret, and
+052: the master secret and session keys.
+053: However, she is confused about the roles of each component in establishing a secure connection, as well as the difference between symmetric and asymmetric cryptography. As her classmate and cybersecurity enthusiast, you are asked to help explain the process.
+054: Purpose of the server’s digital certificate in the TLS key exchange process?
+055: The server sends the digital certificate to prove the identity of the web server to the client, it contains the server’s public key signed by a trusted Certificate Authority. The client can verify the certificate by using the Certificate Authority’s  Public key to check that the digital signature matches the certificate data (Cloudflare Learning n.d.).
+056: Key exchange process
+057: The pre-master secret is an auto generated number by the client and is encrypted using the public key from the certificate and send to the server whereby only the server ca decrypt with its private key (Cloudflare Learning n.d.).
+058: Master secret and session keys
+059: Both Client and Server use the pre-master secret plus random values to form the master secret. Using the master secret the symmetric keys, that is the session keys are created an this will be used for encryption, integrity checks and facilitate secure data exchange (Cloudflare Learning n.d.).
+060: Advanced Network Security skills
+061: Figure 1 The website address is https://www.fruitmaps.com.au (IP address: 203.101.224.119)
+062: The Institute for Future Farming Systems at CQUniversity operates a research web server (as shown in the figure above) hosted in the cloud. The server is expected to allow only HTTPS traffic. However, it has recently been subjected to unusual attacks. As a senior network security engineer, you suspect that some ports on the server may be open and vulnerable. Since you do not have administrative credentials to access the server directly, you have decided to develop a Python script to scan all well-known ports and provide recommendations based on the findings.
+063: Python script to scan all well-known ports (ranging from 1 to 1024), execute the script, and identify which ports are open.
+064: Port 80 – http handles unencrypted web traffic, it is recommended to close this port to reduce man-in-the-middle attacks or data interception (IANA ,2025).
+065: Port 443 – https handles encrypted web traffic, and it ensures data confidentiality and integrity between client and server. It is recommended to keep the port open (IANA , 2025).
+066: Reference
+067: The SSL Store, 2025, Hash Algorithm Comparison: MD5, SHA-1, SHA-2 & SHA-3,  viewed 29 August 2025, https://codesigningstore.com/hash-algorithm-comparison
+068: Alkhalil, Z., Hewage, C., Nawaf, L. & Khan, I. , 9 March 2021,  Phishing Attacks: A Recent Comprehensive Study and a New Anatomy. Frontiers in Computer Science, 3, p. 563060. doi: 10.3389/fcomp.2021.563060.
+069: Cloudflare Learning, n.d.,  What happens in a TLS handshake? , viewed 29 August 2025 , https://www.cloudflare.com/learning/ssl/what-happens-in-a-tls-handshake/
+070: IANA (2025) Service Name and Transport Protocol Port Number Registry, Internet Assigned Numbers Authority, viewed 29 August 2025 ,  https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml
