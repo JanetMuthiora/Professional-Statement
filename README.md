@@ -1,22 +1,23 @@
 NetSec Concepts 
 Key Objectives
 
-Key security concepts and principles
-Common security attacks and defences work
-Role of cryptographic mechanisms in providing computer and network security
-Access control technologies, including firewalls and authentication, to secure computer networks
-Threats and defences that are specific to wireless networks.
+1. Key security concepts and principles
+2. Common security attacks and defences work
+3. Role of cryptographic mechanisms in providing computer and network security
+4. Access control technologies, including firewalls and authentication, to secure computer networks
+5. Threats and defences that are specific to wireless networks
+
 
 Tools and Skills Learnt
-Virtualized lab environments- Windows VM
-Kali Linux
-Wireshark
-
+1. Virtualized lab environments- Windows VM
+2. Kali Linux
+3. Wireshark
 
 
 Projects 
-Cybersecurity lab simulation: malware delivery & reverse-connection analysis (sandboxed - Kali Linux, Windows VM 8)
-Threat attack simulation python script 
+1. Cybersecurity lab simulation: malware delivery & reverse-connection analysis (sandboxed - Kali Linux, Windows VM 8)
+2. Threat attack simulation python script with a self replicating virus
+3.  
 
 Reflection 
 
