@@ -1,19 +1,22 @@
-# Professional-Statement
-CyberSecurity Professional Statement
+NetSec Concepts 
+Key Objectives
 
-My  name is Janet I am a self driven,passionate and goal oriented individual pivotting into technology with cybersecurity as my primary focus 
+Key security concepts and principles
+Common security attacks and defences work
+Role of cryptographic mechanisms in providing computer and network security
+Access control technologies, including firewalls and authentication, to secure computer networks
+Threats and defences that are specific to wireless networks.
+
+Tools and Skills Learnt
+Virtualized lab environments- Windows VM
+Kali Linux
+Wireshark
 
 
-What interests me to cybersecurity
 
-1.exciting role in technology with a clear roadmap 
+Projects 
+Cybersecurity lab simulation: malware delivery & reverse-connection analysis (sandboxed - Kali Linux, Windows VM 8)
+Threat attack simulation python script 
 
-2.improving my own personal security measures and protecting those around me.
+Reflection 
 
-Who is the audience for my professional statement
-
-Security recruiters 
-
-How can my Values, Strengths and Interests support Security Organizations
-
-1. Aspire to learn and grow in the cyber security field constantly improving and practising my skills
