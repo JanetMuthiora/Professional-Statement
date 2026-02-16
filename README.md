@@ -1,10 +1,7 @@
 # Professional-Statement
 CyberSecurity Professional Statement
 
-My  name is Janet I am a self driven,passionate and goal oriented individual pivotting into technology with cybersecurity as my primary focus . With a background in healthcare and pharmaceutical retail my transferrable strengths include but not limited to effective time management, great organization skills , timely and efficient problem solving, effective written and verbal communication skills.
-
-
-My Values include - adhereing to the laws and regulations , strong team player and collaborator , protecting people and sensitive information
+My  name is Janet I am a self driven,passionate and goal oriented individual pivotting into technology with cybersecurity as my primary focus 
 
 
 What interests me to cybersecurity
