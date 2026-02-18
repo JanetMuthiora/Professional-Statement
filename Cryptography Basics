@@ -1,0 +1,38 @@
+Generate File Hash & Verify Integrity
+1. On Kali VM open a terminal and create file:
+echo "This is a secret message for hashing demonstration." > secret_file.txt
+
+2. Generate MD5 and SHA256 Hashes:
+md5sum secret_file.txt => 0052fd71b8fd194208f41c9fe6816b26  secret_file.txt
+sha256sum secret_file.txt => d273df113e903e7f92e9084efeb8847c00db0ce77f028202cbc43435f63c7aab  secret_file.txt
+
+Simulate Data Tampering & Hash Change
+1. On Kali VM, Modify File Content:
+echo "This is a secret message for hashing demonstration. TAMPERED" > secret_file.txt
+
+2. Generate Hashes Again:
+md5sum secret_file.txt => c2b48435068978f1478b87d1aa362e47  secret_file.txt 
+sha256sum secret_file.txt => 543b1c066c4515b6b6c43b65fb1f219b561183ae456eb0edae6f69ff6aed7dab  secret_file.txt
+
+Reflection 
+- Generated and compared MD5 and SHA-256 hashes to verify file integrity and understand how small data changes alter cryptographic fingerprints.
+- Demonstrated tamper detection by modifying file contents and validating hash mismatches.
+
+Symmetric Encryption & Decryption with OpenSSL
+1. On Kali VM, open a terminal, use AES256 to encrypt secret_file.txt. You'll be prompted to enter a passphrase.
+openssl enc -aes-256-cbc -salt -in secret_file.txt -out secret_file.enc
+# When prompted "enter aes-256-cbc encryption password:", enter a password (e.g., "123456")
+# When prompted "Verifying - enter aes-256-cbc encryption password:", enter it again
+Opening secret_file.enc is encrypted gibberish and cannot be read directly. The user must know the exact same key to decrypt it. This demonstrates cryptographic confidentiality.
+
+2. To Decrypt File:
+openssl enc -d -aes-256-cbc -in secret_file.enc -out decrypted_file.txt
+# When prompted for the password, enter the password you set previously ("123456")
+Verify Decryption:
+cat decrypted_file.txt
+Expected: The content of decrypted_file.txt should be identical to the original secret_file.txt.
+
+Reflection 
+- Implemented symmetric encryption and decryption using OpenSSL (AES-256-CBC) to protect sensitive files at rest.
+- Verified successful decryption and data recovery, reinforcing secure key usage and confidentiality principles.
+- Built foundational understanding of cryptographic integrity, confidentiality, and secure data handling in a controlled Linux lab.
