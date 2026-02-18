@@ -14,10 +14,11 @@ Tools and Skills Learnt
 3. Wireshark
 
 
-Projects 
-1. Cybersecurity lab simulation: malware delivery & reverse-connection analysis (sandboxed - Kali Linux, Windows VM 8)
-2. Threat attack simulation python script with a self replicating virus
-3.  
+Projects and Labs
+1. Malware delivery & reverse-connection analysis (sandboxed - Kali Linux, Windows VM 8)
+2. Threat attack simulation using a python script with a self replicating virus
+3. File integrity verification and cryptographic protection of data in a Linux lab environment using hashing algorithms (MD5, SHA-256) and symmetric encryption (AES-256 with OpenSSL).
+
 
 Reflection 
 
