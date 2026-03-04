@@ -1,1 +1,4 @@
-
+ON Oracle Virtual Box 
+Boot up Kali and Metaspoiltable VMs
+On  Kali 
+ssh -o HostKeyAlgorithms=+ssh-rsa -o PubkeyAcceptedAlgorithms=+ssh-rsa msfadmin@192.168.56.35
