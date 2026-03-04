@@ -1,5 +1,5 @@
 # install required packages packages
-py -m pip install seccure
+# py -m pip install seccure
 
 
 import os #imports operating system functions
