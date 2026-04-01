@@ -3,7 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Janet Muthiora — IT Professional</title>
+
+    <!-- ── Primary SEO ──────────────────────────────────────── -->
+    <title>Janet Muthiora — IT Professional &amp; Cybersecurity Enthusiast</title>
+    <meta name="description" content="Portfolio of Janet Muthiora — IT generalist pivoting into cybersecurity, with a focus on network security, infrastructure protection, and GRC. Open to opportunities." />
+    <meta name="author" content="Janet Muthiora" />
+    <meta name="keywords" content="cybersecurity, IT professional, network security, GRC, cloud, Janet Muthiora" />
+    <link rel="canonical" href="https://janetmuthiora.github.io/Professional-Statement/" />
+
+    <!-- ── Open Graph (LinkedIn, Facebook, WhatsApp) ────────── -->
+    <meta property="og:type"        content="website" />
+    <meta property="og:url"         content="https://janetmuthiora.github.io/Professional-Statement/" />
+    <meta property="og:title"       content="Janet Muthiora — IT Professional &amp; Cybersecurity Enthusiast" />
+    <meta property="og:description" content="IT generalist pivoting into cybersecurity — network security, infrastructure protection, and GRC. Open to opportunities." />
+    <meta property="og:image"       content="https://janetmuthiora.github.io/Professional-Statement/JanetMuthiora.png" />
+    <meta property="og:image:alt"   content="Portrait of Janet Muthiora" />
+    <meta property="og:locale"      content="en_AU" />
+    <meta property="og:site_name"   content="Janet Muthiora Portfolio" />
+
+    <!-- ── Twitter / X Card ─────────────────────────────────── -->
+    <meta name="twitter:card"        content="summary_large_image" />
+    <meta name="twitter:title"       content="Janet Muthiora — IT Professional &amp; Cybersecurity Enthusiast" />
+    <meta name="twitter:description" content="IT generalist pivoting into cybersecurity — network security, infrastructure protection, and GRC. Open to opportunities." />
+    <meta name="twitter:image"       content="https://janetmuthiora.github.io/Professional-Statement/JanetMuthiora.png" />
+    <meta name="twitter:image:alt"   content="Portrait of Janet Muthiora" />
+
+    <!-- ── Favicon ──────────────────────────────────────────── -->
+    <link rel="icon"             type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon"             type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180"               href="apple-touch-icon.png" />
+
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -22,6 +51,7 @@
         <ul id="nav-links" role="list">
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -167,6 +197,98 @@
                 <li>Node-RED</li>
                 <li>Node.js</li>
               </ul>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Projects ──────────────────────────────────────────── -->
+      <section id="projects" aria-labelledby="projects-heading">
+        <div class="section-inner">
+          <h2 id="projects-heading">Projects</h2>
+
+          <div class="projects-grid">
+
+            <!-- Project 1: Applied Cryptography -->
+            <article class="project-card">
+              <div class="project-card-header">
+                <span class="project-icon" aria-hidden="true">&#128274;</span>
+                <span class="project-status">Completed</span>
+              </div>
+              <h3>Applied Cryptography</h3>
+              <p class="project-desc">
+                Hands-on cryptography labs covering file hashing and integrity
+                verification (MD5, SHA-256, RIPEMD-160), HMAC-based authentication,
+                symmetric encryption with DES and AES via OpenSSL, and
+                asymmetric public-key cryptography using Python.
+              </p>
+              <ul class="project-stack" aria-label="Technologies used">
+                <li>Python 3</li>
+                <li>OpenSSL</li>
+                <li>hashlib</li>
+                <li>pycryptodome</li>
+                <li>AES / DES</li>
+                <li>RSA</li>
+              </ul>
+              <a
+                class="project-btn"
+                href="https://github.com/JanetMuthiora/Professional-Statement/tree/Applied-Cryptography"
+                target="_blank"
+                rel="noopener"
+                aria-label="View Applied Cryptography project on GitHub"
+              >View on GitHub</a>
+            </article>
+
+            <!-- Project 2: Network Security -->
+            <article class="project-card">
+              <div class="project-card-header">
+                <span class="project-icon" aria-hidden="true">&#127760;</span>
+                <span class="project-status">Completed</span>
+              </div>
+              <h3>Network Security</h3>
+              <p class="project-desc">
+                Practical security labs in a Kali Linux / Metasploitable 2 VM
+                environment: TCP port scanning, remote SSH access with legacy
+                key negotiation, malware propagation analysis, reverse-shell
+                capture in Wireshark, and file integrity checking with OpenSSL.
+              </p>
+              <ul class="project-stack" aria-label="Technologies used">
+                <li>Python 3</li>
+                <li>Kali Linux</li>
+                <li>Wireshark</li>
+                <li>Nmap</li>
+                <li>SSH</li>
+                <li>OpenSSL</li>
+              </ul>
+              <a
+                class="project-btn"
+                href="https://github.com/JanetMuthiora/Professional-Statement/tree/Network-Security"
+                target="_blank"
+                rel="noopener"
+                aria-label="View Network Security project on GitHub"
+              >View on GitHub</a>
+            </article>
+
+            <!-- Project 3: Placeholder -->
+            <article class="project-card project-card--placeholder">
+              <div class="project-card-header">
+                <span class="project-icon" aria-hidden="true">&#128295;</span>
+                <span class="project-status project-status--wip">In Progress</span>
+              </div>
+              <h3>GRC &amp; Compliance Framework</h3>
+              <p class="project-desc">
+                An upcoming project exploring governance, risk, and compliance
+                practices — mapping security controls to frameworks such as
+                NIST CSF and ISO 27001, with practical gap-analysis exercises.
+              </p>
+              <ul class="project-stack" aria-label="Technologies used">
+                <li>NIST CSF</li>
+                <li>ISO 27001</li>
+                <li>Risk Assessment</li>
+                <li>Documentation</li>
+              </ul>
+              <span class="project-btn project-btn--disabled" aria-disabled="true">Coming Soon</span>
             </article>
 
           </div>

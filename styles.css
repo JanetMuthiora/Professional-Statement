@@ -375,6 +375,124 @@ section h2 {
 }
 
 /* ════════════════════════════════════════════════════════════
+   PROJECTS  —  3-column responsive grid of cards
+   ════════════════════════════════════════════════════════════ */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: clamp(16px, 2.5vw, 28px);
+  align-items: start;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--white);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius);
+  padding: clamp(20px, 3vw, 28px);
+  box-shadow: var(--shadow);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(13, 33, 55, 0.14);
+}
+
+.project-card--placeholder {
+  border-style: dashed;
+  opacity: 0.8;
+}
+
+.project-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.project-icon {
+  font-size: 1.6rem;
+  line-height: 1;
+}
+
+.project-status {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  padding: 3px 10px;
+  border-radius: 20px;
+  background: #d4f0dc;
+  color: #1a6b35;
+}
+
+.project-status--wip {
+  background: #fef3cd;
+  color: #7a5800;
+}
+
+.project-card h3 {
+  font-size: clamp(1rem, 2.2vw, 1.1rem);
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 10px;
+}
+
+.project-desc {
+  font-size: clamp(0.87rem, 1.8vw, 0.93rem);
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 18px;
+  flex-grow: 1;        /* pushes tech stack + button to bottom */
+}
+
+/* Tech stack pill list */
+.project-stack {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-bottom: 20px;
+}
+
+.project-stack li {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--navy-mid);
+  background: var(--off-white);
+  border: 1px solid var(--card-border);
+  border-radius: 20px;
+  padding: 3px 10px;
+  white-space: nowrap;
+}
+
+/* GitHub link button */
+.project-btn {
+  display: inline-block;
+  align-self: flex-start;
+  background: var(--navy-mid);
+  color: var(--white);
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 9px 20px;
+  border-radius: 8px;
+  transition: background 0.18s;
+}
+
+.project-btn:hover {
+  background: var(--navy-light);
+}
+
+.project-btn--disabled {
+  background: var(--card-border);
+  color: var(--text-muted);
+  cursor: default;
+}
+
+/* ════════════════════════════════════════════════════════════
    CONTACT  —  Flexbox column of rows
    ════════════════════════════════════════════════════════════ */
 .contact-intro {
@@ -530,8 +648,9 @@ footer {
     font-size: 1rem;
   }
 
-  /* Skills: 2-column grid */
-  .skills-grid {
+  /* Skills + Projects: 2-column grids */
+  .skills-grid,
+  .projects-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -543,8 +662,9 @@ footer {
 
 /* ── 480px: small phones ──────────────────────────────────── */
 @media (max-width: 480px) {
-  /* Skills: single column */
-  .skills-grid {
+  /* Skills + Projects: single column */
+  .skills-grid,
+  .projects-grid {
     grid-template-columns: 1fr;
   }
 
