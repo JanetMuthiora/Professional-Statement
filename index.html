@@ -8,120 +8,221 @@
   </head>
   <body>
 
-    <header class="hero">
-      <div class="hero-inner">
-        <img src="JanetMuthiora.png" alt="Janet Muthiora" class="avatar" />
-        <h1>Janet Muthiora</h1>
-        <p class="hero-degree">Bachelor of Information Technology &mdash; Central Queensland University</p>
-        <p class="hero-title">IT Generalist &amp; Cybersecurity Enthusiast</p>
-        <p class="hero-bio">
-          I am a self-driven, passionate, and goal-oriented individual pivoting into
-          technology with cybersecurity as my primary focus. With a solid foundation
-          in IT support and a commitment to continuous learning, I am eager to
-          contribute my skills and knowledge to protect and secure digital assets.
-          My goal is to leverage my technical expertise and problem-solving abilities
-          to make a positive impact in the cybersecurity industry.
-        </p>
-      </div>
+    <!-- ══ HEADER: site-wide nav + hero ══════════════════════════ -->
+    <header>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <span class="nav-brand">JM</span>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <section id="hero" aria-label="Introduction">
+        <div class="hero-inner">
+          <img src="JanetMuthiora.png" alt="Portrait of Janet Muthiora" class="avatar" />
+          <h1>Janet Muthiora</h1>
+          <p class="hero-degree">
+            Bachelor of Information Technology &mdash; Central Queensland University
+          </p>
+          <p class="hero-title">IT Generalist &amp; Cybersecurity Enthusiast</p>
+          <a href="#contact" class="hero-cta">Get in Touch</a>
+        </div>
+      </section>
     </header>
 
+    <!-- ══ MAIN CONTENT ═══════════════════════════════════════════ -->
     <main>
-      <h2 class="section-heading">Current Stack</h2>
 
-      <div class="skills-grid">
+      <!-- ── About ──────────────────────────────────────────────── -->
+      <section id="about" aria-labelledby="about-heading">
+        <div class="section-inner">
+          <h2 id="about-heading">About Me</h2>
 
-        <div class="card">
-          <div class="card-icon">&#60;/&#62;</div>
-          <h3>Programming Languages</h3>
-          <ul>
-            <li>Python</li>
-            <li>JavaScript</li>
-            <li>TypeScript</li>
-            <li>HTML</li>
-            <li>CSS</li>
+          <article class="about-card">
+            <div class="about-text">
+              <p>
+                I am a self-driven, passionate, and goal-oriented individual pivoting
+                into technology with cybersecurity as my primary focus. With a solid
+                foundation in IT support and a commitment to continuous learning, I am
+                eager to contribute my skills and knowledge to protect and secure
+                digital assets.
+              </p>
+              <p>
+                My goal is to leverage my technical expertise and problem-solving
+                abilities to make a positive impact in the cybersecurity industry —
+                bridging the gap between everyday IT operations and advanced security
+                practices.
+              </p>
+            </div>
+
+            <aside class="about-highlights" aria-label="Quick facts">
+              <article class="highlight">
+                <h3>Focus Area</h3>
+                <p>Cybersecurity &amp; IT Support</p>
+              </article>
+              <article class="highlight">
+                <h3>Education</h3>
+                <p>B.IT — Central Queensland University</p>
+              </article>
+              <article class="highlight">
+                <h3>Status</h3>
+                <p>Open to opportunities</p>
+              </article>
+            </aside>
+          </article>
+        </div>
+      </section>
+
+      <!-- ── Skills ─────────────────────────────────────────────── -->
+      <section id="skills" aria-labelledby="skills-heading" class="section-alt">
+        <div class="section-inner">
+          <h2 id="skills-heading">Current Stack</h2>
+
+          <div class="skills-grid" role="list">
+
+            <article class="card" role="listitem">
+              <div class="card-icon" aria-hidden="true">&#60;/&#62;</div>
+              <h3>Programming Languages</h3>
+              <ul>
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>TypeScript</li>
+                <li>HTML</li>
+                <li>CSS</li>
+              </ul>
+            </article>
+
+            <article class="card" role="listitem">
+              <div class="card-icon" aria-hidden="true">&#128421;</div>
+              <h3>Operating Systems</h3>
+              <ul>
+                <li>Windows</li>
+                <li>Linux</li>
+              </ul>
+            </article>
+
+            <article class="card" role="listitem">
+              <div class="card-icon" aria-hidden="true">&#128274;</div>
+              <h3>Cybersecurity Tools</h3>
+              <ul>
+                <li>Wireshark</li>
+                <li>Nmap</li>
+                <li>Metasploit</li>
+                <li>Cryptography Basics</li>
+                <li>Vulnerability Assessment</li>
+              </ul>
+            </article>
+
+            <article class="card" role="listitem">
+              <div class="card-icon" aria-hidden="true">&#127760;</div>
+              <h3>Networking</h3>
+              <ul>
+                <li>Cisco Packet Tracer</li>
+              </ul>
+            </article>
+
+            <article class="card" role="listitem">
+              <div class="card-icon" aria-hidden="true">&#9729;</div>
+              <h3>Cloud Platforms</h3>
+              <ul>
+                <li>AWS</li>
+                <li>Azure</li>
+                <li>Google Cloud</li>
+              </ul>
+            </article>
+
+            <article class="card" role="listitem">
+              <div class="card-icon" aria-hidden="true">&#128190;</div>
+              <h3>Virtualization</h3>
+              <ul>
+                <li>VMware</li>
+                <li>VirtualBox</li>
+              </ul>
+            </article>
+
+            <article class="card" role="listitem">
+              <div class="card-icon" aria-hidden="true">&#128451;</div>
+              <h3>Database Design</h3>
+              <ul>
+                <li>MySQL</li>
+              </ul>
+            </article>
+
+            <article class="card" role="listitem">
+              <div class="card-icon" aria-hidden="true">&#128196;</div>
+              <h3>Version Control</h3>
+              <ul>
+                <li>Git</li>
+                <li>GitHub</li>
+              </ul>
+            </article>
+
+            <article class="card" role="listitem">
+              <div class="card-icon" aria-hidden="true">&#9881;</div>
+              <h3>Automation Tools</h3>
+              <ul>
+                <li>Docker</li>
+                <li>Node-RED</li>
+                <li>Node.js</li>
+              </ul>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Contact ────────────────────────────────────────────── -->
+      <section id="contact" aria-labelledby="contact-heading">
+        <div class="section-inner section-inner--narrow">
+          <h2 id="contact-heading">Get in Touch</h2>
+          <p class="contact-intro">
+            Interested in working together or have a question? Reach out through
+            any of the channels below.
+          </p>
+
+          <ul class="contact-list" role="list">
+            <li>
+              <article class="contact-item">
+                <span class="contact-icon" aria-hidden="true">&#9993;</span>
+                <div>
+                  <h3>Email</h3>
+                  <a href="mailto:janet@example.com">janet@example.com</a>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="contact-item">
+                <span class="contact-icon" aria-hidden="true">&#128101;</span>
+                <div>
+                  <h3>GitHub</h3>
+                  <a href="https://github.com/JanetMuthiora" target="_blank" rel="noopener">
+                    github.com/JanetMuthiora
+                  </a>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="contact-item">
+                <span class="contact-icon" aria-hidden="true">&#128188;</span>
+                <div>
+                  <h3>LinkedIn</h3>
+                  <a href="https://linkedin.com/in/janetmuthiora" target="_blank" rel="noopener">
+                    linkedin.com/in/janetmuthiora
+                  </a>
+                </div>
+              </article>
+            </li>
           </ul>
         </div>
+      </section>
 
-        <div class="card">
-          <div class="card-icon">&#128421;</div>
-          <h3>Operating Systems</h3>
-          <ul>
-            <li>Windows</li>
-            <li>Linux</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <div class="card-icon">&#128274;</div>
-          <h3>Cybersecurity Tools</h3>
-          <ul>
-            <li>Wireshark</li>
-            <li>Nmap</li>
-            <li>Metasploit</li>
-            <li>Cryptography Basics</li>
-            <li>Vulnerability Assessment</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <div class="card-icon">&#127760;</div>
-          <h3>Networking</h3>
-          <ul>
-            <li>Cisco Packet Tracer</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <div class="card-icon">&#9729;</div>
-          <h3>Cloud Platforms</h3>
-          <ul>
-            <li>AWS</li>
-            <li>Azure</li>
-            <li>Google Cloud</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <div class="card-icon">&#128190;</div>
-          <h3>Virtualization</h3>
-          <ul>
-            <li>VMware</li>
-            <li>VirtualBox</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <div class="card-icon">&#128451;</div>
-          <h3>Database Design</h3>
-          <ul>
-            <li>MySQL</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <div class="card-icon">&#128196;</div>
-          <h3>Version Control</h3>
-          <ul>
-            <li>Git</li>
-            <li>GitHub</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <div class="card-icon">&#9881;</div>
-          <h3>Automation Tools</h3>
-          <ul>
-            <li>Docker</li>
-            <li>Node-RED</li>
-            <li>Node.js</li>
-          </ul>
-        </div>
-
-      </div>
     </main>
 
+    <!-- ══ FOOTER ════════════════════════════════════════════════ -->
     <footer>
-      <p>&copy; 2026 Janet Muthiora</p>
+      <p>&copy; 2026 Janet Muthiora &mdash; IT Professional</p>
     </footer>
 
   </body>
