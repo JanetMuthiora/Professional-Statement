@@ -12,7 +12,14 @@
     <header>
       <nav class="site-nav" aria-label="Primary navigation">
         <span class="nav-brand">JM</span>
-        <ul>
+
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul id="nav-links" role="list">
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -42,19 +49,12 @@
 
           <article class="about-card">
             <div class="about-text">
-              <p>
-                I am a self-driven, passionate, and goal-oriented individual pivoting
-                into technology with cybersecurity as my primary focus. With a solid
-                foundation in IT support and a commitment to continuous learning, I am
-                eager to contribute my skills and knowledge to protect and secure
-                digital assets.
-              </p>
-              <p>
-                My goal is to leverage my technical expertise and problem-solving
-                abilities to make a positive impact in the cybersecurity industry —
-                bridging the gap between everyday IT operations and advanced security
-                practices.
-              </p>
+              <p>My journey into cybersecurity didn’t begin in a server room — it began in healthcare.</p>
+              <p>Working in an environment where accuracy, confidentiality, and trust were non-negotiable shaped how I see technology today. Every system, every network, and every piece of data represents real people, real decisions, and real consequences. That perspective is what ultimately drew me toward cybersecurity.</p>
+              <p>Curiosity became the turning point. I wanted to understand not just how systems worked, but how they could fail — and more importantly, how they could be protected. What started as learning the fundamentals of IT quickly evolved into a deeper pursuit of security: networking, cloud platforms, system analysis, and the principles that keep digital infrastructure resilient.</p>
+              <p>Today, I’m building my path in cybersecurity with a focus on network security, infrastructure protection, and governance, risk, and compliance (GRC) — particularly within sectors where security carries real human impact, such as digital health. My goal is to help organizations design systems that are not only efficient and scalable, but secure by design.</p>
+              <p>As a career transitioner, I bring something unique to the field: a blend of technical curiosity, operational discipline, and a human-centered perspective on security. I approach problems analytically, learn relentlessly, and enjoy the process of breaking down complex systems to understand how they can be strengthened.</p>
+              <p>Cybersecurity is an ever-evolving space — and that’s exactly what excites me. I’m here not just to work in technology, but to contribute to building systems that people can trust.</p>
             </div>
 
             <aside class="about-highlights" aria-label="Quick facts">
@@ -188,7 +188,7 @@
                 <span class="contact-icon" aria-hidden="true">&#9993;</span>
                 <div>
                   <h3>Email</h3>
-                  <a href="mailto:janet@example.com">janet@example.com</a>
+                  <a href="mailto:janetwgakinya@gmail.com">janetwgakinya@gmail.com</a>
                 </div>
               </article>
             </li>
@@ -197,8 +197,8 @@
                 <span class="contact-icon" aria-hidden="true">&#128101;</span>
                 <div>
                   <h3>GitHub</h3>
-                  <a href="https://github.com/JanetMuthiora" target="_blank" rel="noopener">
-                    github.com/JanetMuthiora
+                  <a href="https://github.com/JanetMuthiora/Professional-Statement" target="_blank" rel="noopener">
+                    github.com/JanetMuthiora/Professional-Statement
                   </a>
                 </div>
               </article>
@@ -225,5 +225,23 @@
       <p>&copy; 2026 Janet Muthiora &mdash; IT Professional</p>
     </footer>
 
+    <script>
+      const nav    = document.querySelector('.site-nav');
+      const toggle = document.querySelector('.nav-toggle');
+      const links  = document.querySelectorAll('#nav-links a');
+
+      toggle.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('is-open');
+        toggle.setAttribute('aria-expanded', isOpen);
+      });
+
+      // Close menu when any nav link is clicked
+      links.forEach(link => {
+        link.addEventListener('click', () => {
+          nav.classList.remove('is-open');
+          toggle.setAttribute('aria-expanded', 'false');
+        });
+      });
+    </script>
   </body>
 </html>
