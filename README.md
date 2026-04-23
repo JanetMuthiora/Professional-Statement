@@ -69,6 +69,25 @@ A command-line lab using OpenSSL to explore block cipher fundamentals:
 Exploration of asymmetric cryptography concepts implemented in Python, covering key-pair generation, encryption with a public key, and decryption with the corresponding private key — demonstrating how confidentiality can be achieved without sharing a secret key in advance.
 
 ---
+### 4. Data Encryption Standard (DES) Implementation
+Technical Foundation: Implemented simplified DES with the following specifications:
+
+56-bit key size with 64-bit block size
+2-round encryption process
+Key derivation through permutations and left shifts
+OpenSSL DES-ECB Mode Encryption:
+
+Executed command-line encryption/decryption operations
+Managed cryptographic keys and initialization vectors
+Resolved OpenSSL provider compatibility issues using legacy provider flags
+
+### 5. AES Encryption/Decryption in Python
+Environment: Linux VM with Python 3 implementation
+Modifications: Enhanced key length validation in provided script
+Practical Execution:
+Encrypted plaintext using CBC mode with 256-bit key
+Successfully decrypted ciphertext with matching key and IV parameters
+Troubleshot command syntax for proper file I/O handling
 
 ## Reflection
 
@@ -80,4 +99,4 @@ The Python hashing script reinforced how thin the line is between integrity (has
 
 Encountering and fixing real OpenSSL CLI errors — wrong flag order, missing provider flags, filename mismatches — was an unplanned but important lesson: cryptographic tools fail loudly and specifically, which is by design. Learning to read those error messages carefully is part of becoming competent with these tools.
 
-Going forward, I want to deepen my understanding of asymmetric cryptography (RSA, elliptic curves) and how TLS brings symmetric and asymmetric techniques together in practice.
+
